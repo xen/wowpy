@@ -1,2 +1,3 @@
-## -*- coding: utf-8 -*-
-#place holder
+# -*- coding: utf-8 -*-
+
+from char import Char
