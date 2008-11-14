@@ -13,7 +13,48 @@ class Char:
     
        c = Char(realm='Kul Tiras', region = 'eu', name='Pythonista')
     """
-    
+    base_info = {'Name':'',
+                 'Level':0,
+                 'Class':0,
+                 'ClassId':0,
+                 'Faction':0,
+                 'Gender':0,
+                 'GenderId':0,
+                 'GuildName':'',
+                 'GuildUrl':'',
+                 'LastModified':'',
+                 'Prefix':'',
+                 'Race':'',
+                 'RaceId':0,
+                 'Realm':'',
+                 'Suffix':'',
+                }
+    arena_info = {'BattleGroup':'',
+                  'Faction':'',
+                  'FactionId':0,
+                  'GamesPkayed':0,
+                  'GamesWon':0,
+                  'LastSeasonsRanking':0,
+                  'Name':'', #Arena team name
+                  'Ranking':0,
+                  'Rating':0,
+                  'SeasonGamesPlayed':0,
+                  'SeasonGamesWon':0,
+                  'Url':'',
+                  'MembersTitle':[],
+                  }
+    talents_info = {'TalentTree': '', #format 'X/Y/Z'
+                   'Professions':[],  #format profession = [{'skill': '', 'max':'', 'name': '', 'value': ''}, skill2]
+                   
+                   }
+    stats_info = {'BaseStats':[],
+                  'Resistances':[],
+                  'Melee':[],
+                  'Ranged':[],
+                  'Spell':[],
+                  'Defenses':[],
+                  }
+    #items_info = {}
     def __init__(self, realm, name, region='eu', source_file=None):
         self.realm = realm
         self.name = name
