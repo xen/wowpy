@@ -34,6 +34,6 @@ class Api(object):
             self.token = token
 
     def get(self, method):
-        url = f"{GAME_API[self.region]['base_url']}/{method}?locale = {self.locale} & apikey = {self.toekn}"
+        url = f"{GAME_API[self.region]['base_url']}/{method}?locale = {self.locale} & apikey = {self.token}"
         r = requests.get(url)
         return r.json()
